@@ -5,7 +5,6 @@ function roll() {
     quote
     .then( response => response.json() )
     .then( data => {
-        console.log(data.slip.id)
         document.querySelector('p').innerText = data.slip.advice
         document.querySelector('h1').innerText = `ADVICE   #${data.slip.id}`
     } )
