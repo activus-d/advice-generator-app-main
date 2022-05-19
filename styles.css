@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+html {
+    font-size: 62.5%;
+}
+
+/********************************
+LAYOUT
+********************************/
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    width: 45rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+h4 {
+    flex-basis: 10%;
+    text-align: center;
+}
+p {
+    flex-basis: 75%;
+    text-align: center;
+}
+.divider {
+    flex-basis: 15%;
+    width: 90%;
+}
+.dice {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    bottom: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/********************************
+ADDITIONAL STYLES
+********************************/
+body {
+    background: hsl(218, 23%, 16%);
+}
+section {
+    padding: 2rem;
+    background: hsl(217, 19%, 24%);
+    border-radius: 1rem;
+    font-family: 'Manrope', sans-serif;
+}
+h4 {
+    color: hsl(150, 100%, 66%)
+}
+p {
+    font-size: 2.8rem;
+    color: hsl(193, 38%, 86%);
+    
+}
+.divider {
+    background-image: url(images/pattern-divider-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dice {
+    border-radius: 50%;
+    background: hsl(150, 100%, 66%);
+}
+.dice:hover {
+    box-shadow: 0.32rem 0.2rem 4rem 0.1rem hsl(150, 100%, 66%);
+}
+.dice:active {
+    transform: scaleX(0.95) scaleY(0.95)
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(193, 38%, 86%)
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+.attribution a:hover {
+    color:hsl(150, 100%, 66%);
+}
+
+/********************************
+STYLES FOR MOBILE 500PX
+********************************/
+@media all and (max-width: 500px) {
+    body {
+        overflow: scroll;
+    }
+    section {
+        width: 90%;
+        min-height: 50% ;
+    }
+}
+
+/********************************
+STYLES FOR MOBILE 300PX
+********************************/
+@media all and (max-width: 300px) {
+    section {
+        min-height: 60%;
+    }
+}
+
+/********************************
+STYLES FOR MOBILE 240PX
+********************************/
+@media all and (max-width: 240px) {
+    section {
+        min-height: 70%;
+    }
+}
+
+/********************************
+STYLES FOR MOBILE 170PX
+********************************/
+@media all and (max-width: 170px) {
+    section {
+        min-height: 85%;
+    }
+    .dice {
+        bottom: -5%;
+    }
+}
+
