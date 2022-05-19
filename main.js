@@ -5,11 +5,9 @@ function roll() {
     quote
     .then( response => response.json() )
     .then( data => {
-        console.log(data)
-        document.querySelector('p').textContent = ''
-        document.querySelector('h4').textContent = ''
-        document.querySelector('p').textContent = data.slip.advice
-        document.querySelector('h4').textContent = `ADVICE   # ${data.slip.id}`
+        console.log(data.slip.id)
+        document.querySelector('p').innerText = data.slip.advice
+        document.querySelector('h1').innerText = `ADVICE   #${data.slip.id}`
     } )
     .catch( err => console.log( `error: ${err}` ) )
 }
