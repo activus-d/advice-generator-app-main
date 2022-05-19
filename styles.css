@@ -35,7 +35,7 @@ section {
     align-items: center;
     position: relative;
 }
-h4 {
+h1 {
     flex-basis: 10%;
     text-align: center;
 }
@@ -70,7 +70,7 @@ section {
     border-radius: 1rem;
     font-family: 'Manrope', sans-serif;
 }
-h4 {
+h1 {
     color: hsl(150, 100%, 66%)
 }
 p {
@@ -85,6 +85,8 @@ p {
 }
 .dice {
     border-radius: 50%;
+    border: none;
+    cursor: pointer;
     background: hsl(150, 100%, 66%);
 }
 .dice:hover {
