@@ -20,7 +20,7 @@ Users should be able to: see hover state and get advice one dice is clicked
 
 
 ### Links
-- Solution URL: [https://github.com/activus-d/advice-generator-app-main](https://github.com/activus-d/advice-generator-app-main))
+- Solution URL: [https://github.com/activus-d/advice-generator-app-main](https://github.com/activus-d/advice-generator-app-main)
 - Live Site URL: [ https://activus-d.github.io/advice-generator-app-main/](https://activus-d.github.io/advice-generator-app-main/)
 
 ## My process
