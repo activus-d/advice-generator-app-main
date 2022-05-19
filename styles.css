@@ -28,7 +28,6 @@ main {
 }
 section {
     width: 45rem;
-    height: 26rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,12 +76,17 @@ h1 {
 p {
     font-size: 2.8rem;
     color: hsl(193, 38%, 86%);
-    
+    margin: 2rem 0;
+    word-spacing: 0.4rem;
 }
 .divider {
     background-image: url(images/pattern-divider-desktop.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    margin: 2rem 0;
+}
+.divider::after {
+    content: '.';
 }
 .dice {
     border-radius: 50%;
@@ -94,8 +98,10 @@ p {
     box-shadow: 0.32rem 0.2rem 4rem 0.1rem hsl(150, 100%, 66%);
 }
 .dice:active {
-    transform: scaleX(0.95) scaleY(0.95)
+    transform: scaleX(0.95) scaleY(0.95);
+    
 }
+
 .attribution { 
     font-size: 11px; 
     text-align: center;
